@@ -5,14 +5,14 @@
 # via .github/workflows/release.yml § homebrew-publish.
 #
 # Substitution tokens (replaced verbatim by render-formula.sh):
-#   0.9.6   -- semver string, e.g. 1.0.0
-#   https://github.com/Build-Fractal/orchestrator/releases/download/v0.9.6/build-fractal-orchestrator-0.9.6.tgz       -- https URL of the npm pack tarball published
+#   0.9.7   -- semver string, e.g. 1.0.0
+#   https://github.com/Build-Fractal/orchestrator/releases/download/v0.9.7/build-fractal-orchestrator-0.9.7.tgz       -- https URL of the npm pack tarball published
 #                    on the GitHub release (D007: re-use the P05-
 #                    signed @build-fractal/orchestrator tarball
 #                    rather than a separate brew-tarball; single
 #                    source-of-truth for cross-channel byte-
 #                    equivalence per CON-5).
-#   1d81cf66acd1fad1ba4226be851e2bfbe1d26c5de587b435e51d9e52826b2701    -- 64-hex-char SHA-256 of the tarball, sourced
+#   e2a2e2a2593c38777da3a2d4c1e046acbe9ecbd81907c62323262d95eac61392    -- 64-hex-char SHA-256 of the tarball, sourced
 #                    from the SHA256SUMS file in the GitHub release
 #                    (P05 T03 publishes this).
 #
@@ -23,9 +23,9 @@
 class Orchestrator < Formula
   desc "Autonomous multi-phase software-engineering orchestrator"
   homepage "https://github.com/Build-Fractal/orchestrator"
-  url "https://github.com/Build-Fractal/orchestrator/releases/download/v0.9.6/build-fractal-orchestrator-0.9.6.tgz"
-  version "0.9.6"
-  sha256 "1d81cf66acd1fad1ba4226be851e2bfbe1d26c5de587b435e51d9e52826b2701"
+  url "https://github.com/Build-Fractal/orchestrator/releases/download/v0.9.7/build-fractal-orchestrator-0.9.7.tgz"
+  version "0.9.7"
+  sha256 "e2a2e2a2593c38777da3a2d4c1e046acbe9ecbd81907c62323262d95eac61392"
   license "MIT"
 
   def install
